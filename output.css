@@ -310,9 +310,6 @@
   .w-1\/2 {
     width: calc(1/2 * 100%);
   }
-  .w-1\/4 {
-    width: calc(1/4 * 100%);
-  }
   .w-2\/3 {
     width: calc(2/3 * 100%);
   }
@@ -322,9 +319,6 @@
   .w-3\/5 {
     width: calc(3/5 * 100%);
   }
-  .w-40 {
-    width: calc(var(--spacing) * 40);
-  }
   .w-60 {
     width: calc(var(--spacing) * 60);
   }
@@ -333,9 +327,6 @@
   }
   .w-\[70px\] {
     width: 70px;
-  }
-  .w-\[770px\] {
-    width: 770px;
   }
   .w-fit {
     width: fit-content;
@@ -349,12 +340,6 @@
   .max-w-130 {
     max-width: calc(var(--spacing) * 130);
   }
-  .max-w-\[200px\] {
-    max-width: 200px;
-  }
-  .max-w-\[300px\] {
-    max-width: 300px;
-  }
   .max-w-\[400px\] {
     max-width: 400px;
   }
@@ -364,9 +349,6 @@
   .max-w-\[700px\] {
     max-width: 700px;
   }
-  .max-w-\[770px\] {
-    max-width: 770px;
-  }
   .max-w-\[900px\] {
     max-width: 900px;
   }
@@ -375,15 +357,6 @@
   }
   .min-w-7 {
     min-width: calc(var(--spacing) * 7);
-  }
-  .min-w-\[200px\] {
-    min-width: 200px;
-  }
-  .min-w-\[400px\] {
-    min-width: 400px;
-  }
-  .min-w-\[770px\] {
-    min-width: 770px;
   }
   .min-w-full {
     min-width: 100%;
@@ -405,9 +378,6 @@
   }
   .flex-col {
     flex-direction: column;
-  }
-  .flex-wrap {
-    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -761,16 +731,6 @@
       max-width: 600;
     }
   }
-  .max-lg\:max-w-full {
-    @media (width < 64rem) {
-      max-width: 100%;
-    }
-  }
-  .max-lg\:min-w-0 {
-    @media (width < 64rem) {
-      min-width: calc(var(--spacing) * 0);
-    }
-  }
   .max-lg\:flex-col {
     @media (width < 64rem) {
       flex-direction: column;
@@ -861,16 +821,6 @@
     @media (width < 40rem) {
       font-size: var(--text-base);
       line-height: var(--tw-leading, var(--text-base--line-height));
-    }
-  }
-  .lg\:w-auto {
-    @media (width >= 64rem) {
-      width: auto;
-    }
-  }
-  .lg\:items-start {
-    @media (width >= 64rem) {
-      align-items: flex-start;
     }
   }
 }
@@ -965,18 +915,18 @@ h4 {
   background-attachment: fixed;
   background-size: 100% 200vh;
 }
-ul {
+#schedule ul {
   list-style: none;
   margin-left: 0;
   padding-left: 0;
 }
-li {
+#schedule li {
   display: flex;
   align-items: flex-start;
   gap: 8px;
   margin-bottom: 8px;
 }
-li::before {
+#schedule li::before {
   content: "";
   width: 32px;
   height: 32px;
