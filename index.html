@@ -8,16 +8,15 @@
       type="image/png"
       href="./assets/icons/dominium-favicon.png"
     />
-    <link rel="stylesheet" href="./output.css" />
+    <link rel="stylesheet" href="./dist/output.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Brawler:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
       rel="stylesheet"
     />
-    <title>Dominium Ecom</title>
+    <title>Document</title>
   </head>
-
   <body class="body-gradient-background">
     <header
       class="bg-bg-dark z-99 flex h-fit justify-center py-3 max-sm:h-12 max-sm:py-3"
@@ -29,10 +28,10 @@
 
     <main>
       <section
-        class="from-light-blue to-light-yellow flex h-[calc(100vh-48.5px)] w-full justify-center bg-linear-to-b px-10 py-24 max-lg:h-fit max-lg:px-4 max-lg:py-12"
+        class="from-light-blue to-light-yellow flex h-[calc(100vh-48.5px)] w-full justify-center bg-linear-to-b px-10 py-24 max-lg:px-4 max-lg:py-12"
       >
         <div
-          class="flex w-full max-w-[1140px] items-center gap-24 max-lg:flex-col-reverse max-lg:gap-12"
+          class="flex w-full max-w-[1140px] items-center gap-24 max-lg:gap-12"
         >
           <div
             class="flex w-full flex-col gap-2 max-lg:w-full max-lg:items-center"
@@ -43,9 +42,9 @@
             <h1
               class="font-brawler text-4xl font-semibold text-black max-lg:text-center max-sm:text-2xl"
             >
-              Add up to
-              <span class="bg-accent text-white">$10-30k/month</span> to your
-              store revenue in 60 days without spending more on ads,
+              We’ll increase blended
+              <span class="bg-accent text-white">ROAS by 20%</span> in 60 days
+              without touching your ad account,
               <i class="font-normal">or you don't pay</i>.
             </h1>
             <p
@@ -81,145 +80,184 @@
       </section>
 
       <section
-        class="bg-bg-dark flex w-full justify-center px-10 pt-24 pb-12 max-lg:px-4"
+        class="bg-bg-dark relative flex w-full justify-center overflow-hidden px-10 pt-24 pb-24 max-lg:px-4"
       >
+        <!-- Grid texture background -->
         <div
-          class="flex w-full max-w-[1140px] flex-col items-center gap-24 max-lg:gap-12"
-        >
-          <div class="relative flex w-full flex-col justify-center gap-24">
-            <!-- Step 1 -->
-            <div class="flex w-full justify-center gap-10 max-sm:gap-0">
-              <div class="w-full max-w-100 max-lg:hidden"></div>
+          style="
+            position: absolute;
+            inset: 0;
+            pointer-events: none;
+            opacity: 0.1;
 
-              <div class="relative z-0 h-full max-sm:-ml-8">
+            background-image:
+              linear-gradient(#a1a1aa 1px, transparent 1px),
+              linear-gradient(90deg, #a1a1aa 1px, transparent 1px);
+            background-size: 64px 64px;
+
+            mask-image: radial-gradient(
+              circle at center,
+              black 40%,
+              transparent 80%
+            );
+            -webkit-mask-image: radial-gradient(
+              circle at center,
+              black 40%,
+              transparent 80%
+            );
+          "
+        ></div>
+
+        <div class="relative flex w-full max-w-[1140px] flex-col items-center">
+          <div class="relative flex w-full flex-col">
+            <!-- Step 1 -->
+            <div
+              class="flex w-full items-stretch justify-center gap-10 max-sm:gap-0"
+            >
+              <div
+                class="flex w-full max-w-[400px] items-center max-lg:hidden"
+              ></div>
+              <div
+                class="scale-50hrink-0 flex flex-col items-center"
+                style="width: 70px"
+              >
                 <div
-                  class="flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px]"
+                  class="bg-accent flex h-[70px] w-[70px] shrink-0 items-center justify-center"
+                  style="box-shadow: 00px 10px 20px #c75c4250"
                 >
-                  <div
-                    class="bg-accent flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
-                  >
-                    <span class="font-brawler text-3xl text-white">1</span>
-                  </div>
+                  <div class="h-5 w-5 bg-[#2e140e]"></div>
                 </div>
                 <div
-                  class="bg-accent absolute top-[105px] right-0 left-0 mx-auto h-[calc(100%+110px)] w-[2px]"
-                ></div>
-                <div
-                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000050]"
+                  class="bg-accent mx-auto"
+                  style="width: 2px; height: 120px"
                 ></div>
               </div>
-
               <div
-                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+                class="flex w-full max-w-[400px] items-center py-10 pl-10 max-lg:w-full max-sm:pl-5 reveal"
               >
-                <p class="text-lg text-zinc-300">
-                  You've built a beauty brand worth being proud of. A real
-                  audience, real customers, real momentum.
+                <p
+                  class="text-lg font-brawler leading-relaxed text-neutral-400"
+                  style="font-family: &quot;Brawler&quot;"
+                >
+                  <i>
+                    You've built a beauty brand worth being proud of. A real
+                    audience, real customers, real momentum.</i
+                  >
                 </p>
               </div>
             </div>
 
             <!-- Step 2 -->
             <div
-              class="flex w-full justify-center gap-10 max-lg:flex-row-reverse max-sm:gap-0"
+              class="flex w-full items-stretch justify-center gap-10 max-lg:flex-row-reverse max-sm:gap-0"
             >
               <div
-                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+                class="flex w-full max-w-[400px] items-center py-10 pr-10 max-lg:w-full max-lg:pr-0 max-lg:pl-5 reveal"
               >
-                <p class="text-end text-lg text-zinc-300 max-lg:text-start">
-                  But revenue still feels inconsistent. A strong month followed
-                  by a slow one, always dependent on your next campaign, your
-                  next promotion, or how much you're willing to spend on ads
-                  that month.
+                <p
+                  class="text-lg text-right font-brawler leading-relaxed text-neutral-400 max-lg:text-left"
+                  style="font-family: &quot;Brawler&quot;"
+                >
+                  <i>
+                    But revenue still feels inconsistent. A strong month
+                    followed by a slow one, always dependent on your next
+                    campaign, your next promotion, or how much you're willing to
+                    spend on ads that month.</i
+                  >
                 </p>
               </div>
-
-              <div class="relative z-0 h-full max-sm:-ml-8">
+              <div
+                class="flex shrink-0 flex-col items-center"
+                style="width: 70px"
+              >
                 <div
-                  class="z-0 flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px] shadow-2xs"
+                  class="bg-accent fshrink-0 flex h-[70px] w-[70px] items-center justify-center"
+                  style="box-shadow: 00px 10px 20px #c75c4250"
                 >
-                  <div
-                    class="bg-accent flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
-                  >
-                    <span class="font-brawler text-3xl text-white">2</span>
-                  </div>
+                  <div class="h-5 w-5 bg-[#2e140e]"></div>
                 </div>
                 <div
-                  class="bg-accent absolute top-[105px] right-0 left-0 mx-auto h-[calc(100%+30px)] w-[2px]"
-                ></div>
-                <div
-                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000040]"
+                  class="bg-accent mx-auto"
+                  style="width: 2px; height: 180px"
                 ></div>
               </div>
-
-              <div class="w-full max-w-100 max-lg:hidden"></div>
+              <div
+                class="flex w-full max-w-[400px] items-center max-lg:hidden"
+              ></div>
             </div>
 
             <!-- Step 3 -->
-            <div class="flex w-full justify-center gap-10 max-sm:gap-0">
-              <div class="w-full max-w-100 max-lg:hidden"></div>
-
-              <div class="relative z-0 h-full max-sm:-ml-8">
+            <div
+              class="flex w-full items-stretch justify-center gap-10 max-sm:gap-0"
+            >
+              <div
+                class="flex w-full max-w-[400px] items-center max-lg:hidden"
+              ></div>
+              <div
+                class="flex shrink-0 flex-col items-center"
+                style="width: 70px"
+              >
                 <div
-                  class="flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px]"
+                  class="bg-accent flex h-[70px] w-[70px] shrink-0 items-center justify-center"
+                  style="box-shadow: 00px 10px 20px #c75c4250"
                 >
-                  <div
-                    class="bg-accent flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
-                  >
-                    <span class="font-brawler text-3xl text-white">3</span>
-                  </div>
+                  <div class="h-5 w-5 bg-[#2e140e]"></div>
                 </div>
                 <div
-                  class="bg-accent absolute top-[105px] right-0 left-0 mx-auto h-[calc(100%+90px)] w-[2px]"
-                ></div>
-                <div
-                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000050]"
+                  class="bg-accent mx-auto"
+                  style="width: 2px; height: 210px"
                 ></div>
               </div>
-
               <div
-                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+                class="flex w-full max-w-[400px] items-center py-10 pl-10 max-lg:w-full max-sm:pl-5 reveal"
               >
-                <p class="text-lg text-zinc-300">
-                  The brands growing past you aren't spending more. They're just
-                  monetizing better. They've built a revenue stream that runs in
-                  the background, predictable, owned, and completely independent
-                  from ad spend.
+                <p
+                  class="text-lg font-brawler leading-relaxed text-neutral-400"
+                  style="font-family: &quot;Brawler&quot;"
+                >
+                  <i>
+                    The brands growing past you aren't spending more. They're
+                    just monetizing better. They've built a revenue stream that
+                    runs in the background — predictable, owned, and completely
+                    independent from ad spend.</i
+                  >
                 </p>
               </div>
             </div>
 
             <!-- Step 4 -->
             <div
-              class="flex w-full justify-center gap-10 max-lg:flex-row-reverse max-sm:gap-0"
+              class="flex w-full items-stretch justify-center gap-10 max-lg:flex-row-reverse max-sm:gap-0"
             >
               <div
-                class="z-1 flex w-full max-w-100 flex-col gap-4 pt-[50px] max-lg:w-full max-sm:-ml-4"
+                class="flex w-full max-w-[400px] items-center py-10 pr-10 max-lg:w-full max-lg:pr-0 max-lg:pl-5 reveal"
               >
-                <p class="text-end text-lg text-zinc-300 max-lg:text-start">
-                  Right now, there's a gap between what your store makes and
-                  what it should be making. And every month that gap stays open,
-                  you're leaving money on the table that your audience was
-                  already willing to spend.
+                <p
+                  class="text-lg text-right font-brawler leading-relaxed text-neutral-400 max-lg:text-left"
+                  style="font-family: &quot;Brawler&quot;"
+                >
+                  <i>
+                    Right now, most stores have a gap between what their store
+                    makes and what it should be making. And every month that gap
+                    stays open, they're leaving money on the table that their
+                    audience was already willing to spend.</i
+                  >
                 </p>
               </div>
-
-              <div class="relative z-0 h-full max-sm:-ml-8">
+              <div
+                class="flex shrink-0 flex-col items-center"
+                style="width: 70px"
+              >
                 <div
-                  class="z-0 flex max-h-[140px] items-center justify-center rounded-[50%] border border-[#ffffff10] bg-linear-to-bl from-[rgba(201,74,57,0.2)] to-[rgba(31,31,36,0.2)] p-[35px] shadow-2xs"
+                  class="bg-accent flex h-[70px] w-[70px] shrink-0 items-center justify-center"
+                  style="box-shadow: 00px 10px 20px #c75c4250"
                 >
-                  <div
-                    class="bg-accent flex h-[70px] w-[70px] items-center justify-center rounded-[50%]"
-                  >
-                    <span class="font-brawler text-3xl text-white">4</span>
-                  </div>
+                  <div class="h-5 w-5 bg-[#2e140e]"></div>
                 </div>
-                <div
-                  class="absolute -top-[52.5px] -left-[52.5px] -z-1 h-60 w-60 rounded-[50%] bg-[#00000040]"
-                ></div>
               </div>
-
-              <div class="w-full max-w-100 max-lg:hidden"></div>
+              <div
+                class="flex w-full max-w-[400px] items-center max-lg:hidden"
+              ></div>
             </div>
           </div>
         </div>
@@ -237,8 +275,10 @@
             alt="Ian Souisa"
             class="h-32 rounded-full object-cover"
           />
-          <h2 class="text-center text-white">We help beauty brands scale.</h2>
-          <p class="text-center text-lg text-zinc-300">
+          <h2 class="text-center text-white reveal">
+            We help beauty brands scale.
+          </h2>
+          <p class="text-center text-lg text-neutral-400">
             I'm Ian Souisa, and over at Dominium Ecom, we specialize in helping
             beauty eCommerce brands scale profitably, fast. With over 3 years of
             experience in digital marketing and online presence, and having
@@ -246,7 +286,7 @@
             the entire customer journey.
           </p>
           <div class="h-0.5 w-2/3 bg-zinc-700"></div>
-          <p class="text-center text-lg text-zinc-300">
+          <p class="text-center text-lg text-neutral-400">
             If you’re tired of being stuck, we're here to help you break that
             cycle.<br />Just book a call, and I’ll see you there.
           </p>
@@ -256,9 +296,7 @@
         </div>
       </section>
 
-      <section
-        class="flex hidden w-full justify-center px-10 py-24 max-lg:px-4"
-      >
+      <section class="hidden w-full justify-center px-10 py-24 max-lg:px-4">
         <div class="flex w-full max-w-[700px] flex-col items-center gap-13">
           <h2 class="text-bg-dark">FAQ</h2>
 
@@ -375,7 +413,7 @@
             class="flex w-full max-w-[400px] flex-col gap-8 max-lg:max-w-[600] max-lg:items-center"
           >
             <h2
-              class="text-bg-dark text-center text-4xl font-semibold max-sm:text-2xl"
+              class="text-bg-dark text-center text-4xl font-semibold max-sm:text-2xl reveal"
             >
               Book Your Free<br />Discovery Call
             </h2>
@@ -475,9 +513,24 @@
           });
         });
       });
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.15, rootMargin: "0px 0px -40px 0px" },
+      );
+
+      document
+        .querySelectorAll(".reveal")
+        .forEach((el) => observer.observe(el));
     </script>
     <footer
-      class="bg-bg-dark flex w-full justify-center gap-12 py-4 text-xs text-zinc-400"
+      class="bg-bg-dark flex w-full justify-center gap-12 py-4 text-xs text-neutral-400"
     >
       <a href="/privacy-policy/">Privacy Policy</a>
       <a href="/terms-and-conditions/">Terms and Conditions</a>
